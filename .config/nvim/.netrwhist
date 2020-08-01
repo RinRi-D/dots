@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/rinri/Desktop/dots/.config'
+let g:netrw_dirhist_9='/home/rinri/Desktop/dots/.config/cmus'
+let g:netrw_dirhist_8='/etc/xdg/autostart'
+let g:netrw_dirhist_7='/home/rinri/.config/cmus'
+let g:netrw_dirhist_6='/home/rinri/.config/cmus/playlists'
+let g:netrw_dirhist_5='/home/rinri/.config/cmus'
+let g:netrw_dirhist_4='/home/rinri/.config/cmus/playlists'
+let g:netrw_dirhist_3='/home/rinri/.config/cmus'
+let g:netrw_dirhist_2='/home/rinri/.gnupg'
+let g:netrw_dirhist_1='/home/rinri/.gnupg/private-keys-v1.d'
