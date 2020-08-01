@@ -4,4 +4,18 @@ I am using [Arch linux](https://www.archlinux.org/) with [dwm](https://dwm.suckl
 
 ## Screenshots
 
+### Clear:
 ![clear](clear.png)
+
+### Neofetch + ranger:
+![neofetch](neofetch.png)
+
+### Music player with mixer(cmus + pulsemixer):
+![cmus](cmus.png)
+
+### Text editor(neovim):
+![neovim](vim.png)
+
+### Browser(firefox):
+![firefox](firefox.png)
+
