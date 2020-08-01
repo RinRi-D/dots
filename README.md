@@ -19,3 +19,6 @@ I am using [Arch linux](https://www.archlinux.org/) with [dwm](https://dwm.suckl
 ### Browser(firefox):
 ![firefox](firefox.png)
 
+### Wallpaper(IA vocaloid):
+![wall](wall.png)
+You can find .kra file for krita and edit the wallpaper.
