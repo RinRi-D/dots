@@ -7,6 +7,7 @@
 - Font: DejaVuMono Nerd patched
 - File manager: [ranger](https://github.com/ranger/ranger) (will replace it soon)
 - Music player: [cmus](https://github.com/cmus/cmus)
+- Video player: [mpv](https://mpv.io/)
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
 - Wallpaper: [pixiv](https://www.pixiv.net/en/artworks/23346358)
