@@ -1,6 +1,15 @@
 # This is my dotfiles repository
 
-I am using [Arch linux](https://www.archlinux.org/) with [dwm](https://dwm.suckless.org/) window manager.
+- OS: [Arch Linux](https://www.archlinux.org/)
+- WM: [dwm](https://dwm.suckless.org/)
+- Terminal: [st](https://st.suckless.org/)
+- Editor: [neovim](https://neovim.io/)
+- Font: DejaVuMono Nerd patched
+- File manager: [ranger](https://github.com/ranger/ranger) (will replace it soon)
+- Music player: [cmus](https://github.com/cmus/cmus)
+- Notifications: [Dunst](https://github.com/dunst-project/dunst)
+- Status bar: [slstatus](https://tools.suckless.org/slstatus/)
+- Wallpaper: [pixiv](https://www.pixiv.net/en/artworks/23346358)
 
 ## Screenshots
 
@@ -15,6 +24,9 @@ I am using [Arch linux](https://www.archlinux.org/) with [dwm](https://dwm.suckl
 
 ### Text editor(neovim):
 ![neovim](vim.png)
+
+### Notifications(dunst):
+![dunst](dunst.png)
 
 ### Browser(firefox):
 ![firefox](firefox.png)
