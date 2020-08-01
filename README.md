@@ -10,6 +10,8 @@
 - Video player: [mpv](https://mpv.io/)
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
+- Email client: [neomutt](https://neomutt.org/) + [thunderbird](https://www.thunderbird.net)
+- News(RSS) client: [newsboat](https://newsboat.org/) + [akregator](https://userbase.kde.org/Akregator)
 - Wallpaper: [pixiv](https://www.pixiv.net/en/artworks/23346358)
 
 ## Screenshots
