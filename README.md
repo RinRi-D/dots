@@ -1,11 +1,11 @@
 # This is my dotfiles repository
 
-- OS: [Arch Linux](https://www.archlinux.org/)
+- OS: [Artix Linux](https://www.artixlinux.org/)
 - WM: [dwm](https://dwm.suckless.org/)
 - Terminal: [st](https://st.suckless.org/)
 - Editor: [neovim](https://neovim.io/)
-- Font: DejaVuMono Nerd patched
-- File manager: [ranger](https://github.com/ranger/ranger) (will replace it soon)
+- Font: DejaVuMono
+- File manager: [lf](https://github.com/gokcehan/lf)
 - Music player: [cmus](https://github.com/cmus/cmus)
 - Video player: [mpv](https://mpv.io/)
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
