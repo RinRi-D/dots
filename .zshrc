@@ -6,24 +6,46 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export LC_CTYPE=ru_RU.UTF-8
+export EDITOR=nvim
+alias ll="ls -l"
+alias la="ls -a"
+alias lal="ls -al"
+alias huion="xsetwacom set 'HUION Huion Tablet Pen stylus' Area 4384 3990 24384 15240"
 alias dxyz="ssh root@rinri-d.xyz"
 alias mrcon="mcrcon -H rinri-d.xyz -p -t"
 alias vim="nvim"
 alias minemus="mpv --no-video https://youtu.be/Dg0IjOzopYU"
+alias weebcabin="~/scripts/anime.sh"
+alias cal="cal -m"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=10000
+SAVEHIST=10000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/rinri/.zshrc'
 
-autoload -Uz compinit
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
 compinit
-# End of lines added by compinstall
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+_comp_options+=(globdots)	
 
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+
+# End of lines added by compinstall
+source ~/src/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

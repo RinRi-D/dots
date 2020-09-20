@@ -1,6 +1,6 @@
 ! special
 *.foreground:   #ffffff
-*.background:   #000000
+*.background:  	#1f1f2b
 *.cursorColor:  #ffffff
 
 ! black
@@ -34,30 +34,3 @@
 ! white
 *.color7:       #e3e7de
 *.color15:      #eeeeec
-
-urxvt.shading: 0
-urxvt.transparent: false
-URxvt.scrollBar: False
-URxvt.font: xft:DejaVuSansMono Nerd Font:size=13
-
-!! Common Keybinds for Navigations
-URxvt.keysym.Shift-Up: command:\033]720;1\007
-URxvt.keysym.Shift-Down: command:\033]721;1\007
-URxvt.keysym.Control-Up: \033[1;5A
-URxvt.keysym.Control-Down: \033[1;5B
-URxvt.keysym.Control-Right: \033[1;5C
-URxvt.keysym.Control-Left: \033[1;5D
-
-!! Copy Paste & Other Extensions
-URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
-URxvt.copyCommand: xclip -i -selection clipboard
-URxvt.pasteCommand: xclip -o -selection clipboard
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.urlLauncher: firefox
-URxvt.underlineURLs: true
-URxvt.urlButton: 1
