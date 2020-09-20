@@ -4,7 +4,7 @@
 - WM: [dwm](https://dwm.suckless.org/)
 - Terminal: [st](https://st.suckless.org/)
 - Editor: [neovim](https://neovim.io/)
-- Font: DejaVuMono
+- Font: DejaVuMono Nerd Patched
 - File manager: [lf](https://github.com/gokcehan/lf)
 - Music player: [cmus](https://github.com/cmus/cmus)
 - Video player: [mpv](https://mpv.io/)
