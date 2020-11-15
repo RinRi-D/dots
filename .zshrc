@@ -5,11 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+
 export LC_CTYPE=ru_RU.UTF-8
 export EDITOR=nvim
-alias ll="ls -l"
-alias la="ls -a"
-alias lal="ls -al"
+alias ..="cd .."
+alias ls="ls --color"
+alias ll="ls -l --color"
+alias la="ls -a --color"
+alias lal="ls -al --color"
 alias huion="xsetwacom set 'HUION Huion Tablet Pen stylus' Area 4384 3990 24384 15240"
 alias dxyz="ssh root@rinri-d.xyz"
 alias mrcon="mcrcon -H rinri-d.xyz -p -t"
@@ -49,3 +53,4 @@ source ~/src/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [ -e /home/rinri/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rinri/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
