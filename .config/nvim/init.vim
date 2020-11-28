@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
+"{{ Language specific }}
+    Plug 'mattn/emmet-vim'                             " Emmet for web-gay developing
 
 call plug#end()
 

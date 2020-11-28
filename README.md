@@ -5,13 +5,11 @@
 - Terminal: [st](https://st.suckless.org/)
 - Editor: [neovim](https://neovim.io/)
 - Font: DejaVuMono Nerd Patched
-- File manager: [lf](https://github.com/gokcehan/lf)
 - Music player: [cmus](https://github.com/cmus/cmus)
 - Video player: [mpv](https://mpv.io/)
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
 - Email client: [neomutt](https://neomutt.org/) + [thunderbird](https://www.thunderbird.net)
-- News(RSS) client: [newsboat](https://newsboat.org/) + [akregator](https://userbase.kde.org/Akregator)
 - Wallpaper: [pixiv](https://www.pixiv.net/en/artworks/23346358)
 
 ## Screenshots
@@ -19,10 +17,10 @@
 ### Clear:
 ![clear](clear.png)
 
-### Neofetch + ranger:
+### Neofetch:
 ![neofetch](neofetch.png)
 
-### Music player with mixer(cmus + pulsemixer):
+### Music player and mixer(cmus + pulsemixer):
 ![cmus](cmus.png)
 
 ### Text editor(neovim):
