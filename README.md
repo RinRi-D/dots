@@ -1,4 +1,4 @@
-# This is my dotfiles repository
+# My configuration
 
 - OS: [Artix Linux](https://www.artixlinux.org/)
 - WM: [dwm](https://dwm.suckless.org/)
@@ -10,7 +10,7 @@
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
 - Email client: [neomutt](https://neomutt.org/) + [thunderbird](https://www.thunderbird.net)
-- Wallpaper: [pixiv](https://www.pixiv.net/en/artworks/23346358)
+- Wallpaper: [wallhaven](https://wallhaven.cc/w/pk3kde)
 
 ## Screenshots
 
@@ -32,6 +32,5 @@
 ### Browser(firefox):
 ![firefox](firefox.png)
 
-### Wallpaper(IA vocaloid):
-![wall](wall.png)
-You can find .kra file for krita and edit the wallpaper.
+### Wallpaper:
+![wall](newwall.jpg)

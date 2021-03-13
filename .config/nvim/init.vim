@@ -1,27 +1,17 @@
 call plug#begin('~/.vim/plugged')
 
 "{{ The Basics }}
-    Plug 'gmarik/Vundle.vim'                           " Vundle
     Plug 'joshdick/onedark.vim'                        " Colors
     Plug 'itchyny/lightline.vim'                       " Lightline statusbar
-    Plug 'suan/vim-instant-markdown', {'rtp': 'after'} " Markdown Preview
-    Plug 'frazrepo/vim-rainbow'
 "{{ File management }}
-    Plug 'vifm/vifm.vim'                               " Vifm
     Plug 'scrooloose/nerdtree'                         " Nerdtree
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
     Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
-"{{ Tim Pope Plugins }}
-    Plug 'tpope/vim-surround'                          " Change surrounding marks
 "{{ Syntax Highlighting and Colors }}
     Plug 'ap/vim-css-color'                            " Color previews for CSS
 "{{ Junegunn Choi Plugins }}
-    Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
-    Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
-"{{ Language specific }}
-    Plug 'mattn/emmet-vim'                             " Emmet for web-gay developing
-
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " colorscheme
@@ -36,11 +26,23 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-" markdown
-let g:instant_markdown_browser = "st surf"
+filetype plugin on
+let g:instant_markdown_browser = "firefox --new-window"
 
 " Make Vim more useful
 set nocompatible
+" Long lines as one line
+set nowrap
+" Ruler
+set ruler
+" Horizontal splits will automatically be below
+set splitbelow
+" Vertical splits will automatically be to the right
+set splitright
+" Indent
+set smartindent
+set autoindent
+set cursorline
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard+=unnamedplus
 " Enhance command-line completion
@@ -109,6 +111,23 @@ endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
-map <Leader>c :w! \| !pdflatex <c-r>%<CR><CR>
+
+" Better tabbing
+vnoremap < <gv
+vnoremap > >gv
+
+" Better window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+map <Leader>c :w! \| !make <CR>
+map <Leader>r <c-w>v <c-w>l :terminal ./run.sh <c-r>% <CR>a
 map <Leader>t :!st&<CR><CR>
+map <Leader>o :FZF<CR>
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-l> <plug>(fzf-complete-line)
 vnoremap <C-c> "+y
