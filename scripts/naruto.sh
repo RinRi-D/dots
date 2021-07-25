@@ -1,1 +1,0 @@
-st mpv --audio-device=jack /mnt/rec/Media/Naruto\ Music\ Collection\ \(FLAC\)/Naruto/NARUTO\ Original\ Soundtrack/07\ -\ Renewed\ Will\ to\ Fight.flac

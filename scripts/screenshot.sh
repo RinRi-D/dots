@@ -1,3 +1,5 @@
+#!/bin/sh
+
 if [ $# -eq 0 ]
 then
     magick import ~/Screenshots/$(date +%e.%m.%y-%T).png

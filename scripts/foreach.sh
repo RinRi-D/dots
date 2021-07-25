@@ -1,7 +1,6 @@
 #!/bin/bash
-File=$1
-Lines=$(cat $File)
-for Line in $Lines
-do
-    $2 "$Line"
-done
+
+while read -u 10 p; do
+    echo "Copying $p..."
+    cp "$p" send
+done 10<$1

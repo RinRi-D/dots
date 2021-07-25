@@ -14,6 +14,23 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
 call plug#end()
 
+" for transparent background
+function! AdaptColorscheme()
+   highlight clear CursorLine
+   highlight Normal ctermbg=none
+   highlight LineNr ctermbg=none
+   highlight Folded ctermbg=none
+   highlight NonText ctermbg=none
+   highlight SpecialKey ctermbg=none
+   highlight VertSplit ctermbg=none
+   highlight SignColumn ctermbg=none
+endfunction
+
+autocmd ColorScheme * call AdaptColorscheme()
+
+
+set cursorline
+
 " colorscheme
 syntax on
 
@@ -42,7 +59,6 @@ set splitright
 " Indent
 set smartindent
 set autoindent
-set cursorline
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard+=unnamedplus
 " Enhance command-line completion
