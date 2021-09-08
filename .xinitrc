@@ -1,4 +1,5 @@
-export PATH=$PATH:/home/rinri/scripts
+export PATH=$PATH:/home/rinri/scripts:/home/rinri/scripts/Discord
+~/scripts/automount.sh &
 while true; do
     # Log stderror to a file 
     dwm 2> ~/.dwm.log

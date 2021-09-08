@@ -1,0 +1,1 @@
+screenkey --opacity 0.3 -p fixed -g 350x70-10-100

@@ -1,6 +1,6 @@
 # My configuration
 
-- OS: [Artix Linux](https://www.artixlinux.org/)
+- OS: [Arch Linux](https://archlinux.org)
 - WM: [dwm](https://dwm.suckless.org/)
 - Terminal: [st](https://st.suckless.org/)
 - Editor: [neovim](https://neovim.io/)
@@ -10,27 +10,27 @@
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
 - Email client: [neomutt](https://neomutt.org/) + [thunderbird](https://www.thunderbird.net)
-- Wallpaper: [wallhaven](https://wallhaven.cc/w/pk3kde)
+- Wallpaper: [wallhaven](https://wallhaven.cc/w/p8q1x3) (konachan is better)
 
 ## Screenshots
 
 ### Clear:
-![clear](clear.png)
+![clear](clear.jpg)
 
 ### Neofetch:
-![neofetch](neofetch.png)
+![neofetch](neofetch.jpg)
 
 ### Music player and mixer(cmus + pulsemixer):
-![cmus](cmus.png)
+![cmus](cmus.jpg)
 
 ### Text editor(neovim):
-![neovim](vim.png)
+![neovim](vim.jpg)
 
 ### Notifications(dunst):
-![dunst](dunst.png)
+![dunst](dunst.jpg)
 
 ### Browser(firefox):
-![firefox](firefox.png)
+![firefox](firefox.jpg)
 
 ### Wallpaper:
 ![wall](newwall.jpg)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while read -u 10 p; do
+while read -r p; do
     echo "Copying $p..."
-    cp "$p" send
-done 10<$1
+    cp "$p" fav
+done

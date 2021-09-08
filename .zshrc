@@ -5,10 +5,21 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export QT_QPA_PLATFORMTHEME=qt5ct
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox" 
 export LC_CTYPE=ru_RU.UTF-8
+
+# less + man
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+export PAGER="less"
 
 fzfcd () {
 	cd "$(fd --type d --follow --exclude .git --exclude node_modules | fzf)"
@@ -18,12 +29,8 @@ alias ls="ls --color"
 alias ll="ls -l --color"
 alias la="ls -a --color"
 alias lal="ls -al --color"
-alias huion="xsetwacom set 'HUION Huion Tablet Pen stylus' Area 4384 3990 24384 15240"
 alias dxyz="ssh root@rinri-d.xyz"
-alias mrcon="mcrcon -H rinri-d.xyz -p -t"
 alias vim="nvim"
-alias minemus="mpv --no-video https://youtu.be/Dg0IjOzopYU"
-alias weebcabin="~/scripts/anime.sh"
 alias cal="cal -m"
 
 # Lines configured by zsh-newuser-install
