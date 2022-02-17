@@ -5,12 +5,12 @@
 - Terminal: [st](https://st.suckless.org/)
 - Editor: [neovim](https://neovim.io/)
 - Font: DejaVuMono Nerd Patched
+- X11 Compositor: [picom](https://github.com/yshui/picom) (dual_kawase blur + rounded corners)
 - Music player: [cmus](https://github.com/cmus/cmus)
 - Video player: [mpv](https://mpv.io/)
 - Notifications: [Dunst](https://github.com/dunst-project/dunst)
 - Status bar: [slstatus](https://tools.suckless.org/slstatus/)
-- Email client: [neomutt](https://neomutt.org/) + [thunderbird](https://www.thunderbird.net)
-- Wallpaper: [wallhaven](https://wallhaven.cc/w/p8q1x3) (konachan is better)
+- Wallpaper: [pixiv](https://wallhaven.cc/w/p8q1x3)
 
 ## Screenshots
 
@@ -20,16 +20,16 @@
 ### Neofetch:
 ![neofetch](neofetch.jpg)
 
-### Music player and mixer(cmus + pulsemixer):
+### Music player:
 ![cmus](cmus.jpg)
 
-### Text editor(neovim):
+### Text editor (neovim):
 ![neovim](vim.jpg)
 
-### Notifications(dunst):
+### Notifications (dunst):
 ![dunst](dunst.jpg)
 
-### Browser(firefox):
+### Browser (firefox):
 ![firefox](firefox.jpg)
 
 ### Wallpaper:
