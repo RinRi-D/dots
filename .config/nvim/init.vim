@@ -1,19 +1,18 @@
 call plug#begin('~/.vim/plugged')
 
-"{{ The Basics }}
     Plug 'joshdick/onedark.vim'                        " Colors
     Plug 'itchyny/lightline.vim'                       " Lightline statusbar
-"{{ File management }}
     Plug 'scrooloose/nerdtree'                         " Nerdtree
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
     Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
-"{{ Syntax Highlighting and Colors }}
     Plug 'ap/vim-css-color'                            " Color previews for CSS
-"{{ Junegunn Choi Plugins }}
-    Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
+    Plug 'junegunn/limelight.vim'
     Plug 'junegunn/fzf.vim'
-"{{ C++ development }}
+    Plug 'xolox/vim-misc'
+    Plug 'xolox/vim-session'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'mfussenegger/nvim-dap'
+    Plug 'rcarriga/nvim-dap-ui'
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'vim-syntastic/syntastic'
     Plug 'rhysd/vim-clang-format'
@@ -51,6 +50,9 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 filetype plugin on
 let g:instant_markdown_browser = "firefox --new-window"
+
+let g:session_autosave = "no"
+let g:session_autoload = "no"
 
 " Make Vim more useful
 set nocompatible
@@ -132,7 +134,6 @@ set title
 set showcmd
 " Use relative line numbers
 
-" For C++ plugins
 set hidden
 set nobackup
 set nowritebackup
@@ -351,3 +352,12 @@ vnoremap <C-c> "+y
 cnoremap w!! SudaWrite
 
 colorscheme onedark
+
+" Debugging
+map <Leader>db :lua require'dap'.toggle_breakpoint() <CR>
+map <Leader>dc :lua require'dap'.continue() <CR>
+map <Leader>do :lua require'dap'.step_over() <CR>
+map <Leader>di :lua require'dap'.step_into() <CR>
+map <Leader>dn :lua require("dapui").toggle() <CR>
+lua require("dap-conf")
+lua require("dapui").setup()

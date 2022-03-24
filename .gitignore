@@ -1,3 +1,4 @@
-scripts/anime.sh
-scripts/upload.sh
-scripts/download.sh
+**/anime.sh
+**/upload.sh
+**/download.sh
+**/cpptools

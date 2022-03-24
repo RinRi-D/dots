@@ -1,4 +1,4 @@
-export PATH=$PATH:/home/rinri/scripts:/home/rinri/scripts/Discord
+export PATH=$PATH:/home/rinri/scripts:/home/rinri/scripts/Discord:/home/rinri/.local/bin
 ~/scripts/automount.sh &
 while true; do
     # Log stderror to a file 

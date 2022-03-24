@@ -2,29 +2,28 @@ Xcursor.size: 20
 
 ! special
 *.foreground:   #effbff
-!*.background:   #20273a
 *.background:   #282c34
 *.cursorColor:  #effbff
 
 ! black
 *.color0:       #000000
-*.color8:       #3d0066
+*.color8:       #222222
 
 ! red
-*.color1:       #ff6360
+*.color1:       #ffa3a3
 *.color9:       #ff6360
 
 ! green
-*.color2:       #77ff60
+*.color2:       #89e19e
 *.color10:      #77ff60
 
 ! yellow
-*.color3:       #f1de7f
+*.color3:       #fbdf90
 *.color11:      #f1de7f
 
 ! blue
-*.color4:       #630fe8
-*.color12:      #630fe8
+*.color4:       #7733ee
+*.color12:      #7733ee
 
 ! magenta
 *.color5:       #9054ff
