@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (0, 800)
+    width = (0, 500)
 
     # The maximum height of a single notification, excluding the frame.
     height = 800
@@ -195,7 +195,7 @@
     max_icon_size = 64
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/breeze-dark/status/16/:/usr/share/icons/breeze/devices/16/
+    icon_path = /usr/share/icons/breeze-dark/status/16/:/usr/share/icons/breeze-dark/devices/16/:/usr/share/icons/breeze-dark/actions/16/
 
     ### History ###
 

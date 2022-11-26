@@ -2,20 +2,18 @@
 
 lxpolkit &
 slstatus &
+fcitx5 &
 dunst &
-setxkbmap -layout us,ru -option grp:alt_shift_toggle &
-xbanish &
 xrdb ~/.Xresources &
-wmname LG3D &
 feh --bg-fill ~/walls/current.png &
-picom --experimental-backends &
+picom &
+amixer -c 1 sset 'Master' 0%
+amixer -c 1 sset 'Speaker' 0%
 xautolock -time 5 -locker slock.sh &
 brightnessctl set 100% &
 wmname LG3D &
 emacs --daemon &
-eval $(gnome-keyring-daemon --start) &
+flameshot &
+eval "$(gnome-keyring-daemon --start)" &
 export SSH_AUTH_SOCK &
-#killall pulseaudio
-~/scripts/start-jack.sh &
-cadence &
-mount ~/nextcloud &
+easyeffects --gapplication-service &

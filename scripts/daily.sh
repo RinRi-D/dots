@@ -1,3 +1,3 @@
 #!/bin/sh
 
-notify-send "Daily Fortune" "$(fortune|cowsay)"
+/home/rinri/scripts/root-notify.sh "Daily Fortune" "$(fortune|cowsay -W 35)"

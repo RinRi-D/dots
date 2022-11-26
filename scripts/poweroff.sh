@@ -3,8 +3,8 @@
 chosen=$(echo "Shutdown\nReboot\nSuspend\nHibernate" | dmenu -i -p "Power Management")
 
 case "$chosen" in
-    Shutdown) sudo poweroff;;
-    Reboot) sudo reboot;;
+    Shutdown) killall picom; systemctl poweroff;;
+    Reboot) killall picom; systemctl reboot;;
     Suspend) slock & systemctl suspend;;
     Hibernate) systemctl hibernate;;
 esac

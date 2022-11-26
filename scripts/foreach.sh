@@ -2,5 +2,5 @@
 
 while read -r p; do
     echo "Copying $p..."
-    cp "$p" fav
+    #cp "$p" fav
 done
