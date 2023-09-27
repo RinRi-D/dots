@@ -1,5 +1,2 @@
-require('rin.settings')
-require('rin.plugins')
-require('rin.keymaps')
-require('rin.lsp')
--- TODO: treesitter, telescope, NERDtree alt
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

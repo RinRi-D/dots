@@ -37,10 +37,10 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/rinri/.zshrc'
 
-autoload -U compinit
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)	
+#autoload -U compinit
+#zmodload zsh/complist
+#compinit
+#_comp_options+=(globdots)	
 
 bindkey -s '^o' 'fzfcd\n'
 bindkey -M viins '\e.' insert-last-word
@@ -69,3 +69,6 @@ export FZF_DEFAULT_OPTS="--height 50% -1 --reverse --multi --inline-info --previ
 if [ -e /home/rinri/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rinri/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 eval "$(starship init zsh)"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

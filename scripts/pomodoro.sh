@@ -4,7 +4,7 @@ sl=25 # study session time in minutes
 bl=5 # break time in minutes
 bll=20 # long break time in minutes
 bls=4 # number of study sessions before long break
-ringtone="$HOME/Media/warcraft-soundtrack/2004 World of Warcraft/ringtone.flac"
+ringtone="$HOME/disks/Media/warcraft-soundtrack/2004 World of Warcraft/ringtone.flac"
 
 sessions=0 # number of sessions passed
 # if you kill and restart pomodoro.sh, you can specify the number of sessions passed
@@ -36,8 +36,8 @@ do
                 tl=$bll
             else
                 state=1
-                printf "\rBreak time! Sessions done: %d\n" "$sessions"
-                notify-send -i "media-playback-paused" "Break time!"
+                printf "\rBreak time! Exercises (eyes, hands, and back) Sessions done: %d\n" "$sessions"
+                notify-send -i "media-playback-paused" "Break time! Exercises (eyes, hands, and back)"
                 mpv --no-vid --no-terminal "$ringtone" &
                 tl=$bl
             fi

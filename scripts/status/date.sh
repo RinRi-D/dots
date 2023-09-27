@@ -1,7 +1,6 @@
 #!/bin/sh
+month="$(LC_TIME=ja_JP.UTF-8 date "+%A")"
+day="$(LC_TIME=ja_JP.UTF-8 date "+%x")"
+time="$(date "+%H:%M")"
 
-month=`date "+%a"`
-day=`date "+%d.%m.%Y"`
-time=`date "+%H:%M"`
-
-printf "^c#222222^^b#a77bf2^ $month ^b#9863f2^ $day ^b#884cef^ $time "
+printf "^c#222222^^b#a77bf2^ %s ^b#9863f2^ %s ^b#884cef^ %s " "$month" "$day" "$time"

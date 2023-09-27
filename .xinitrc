@@ -1,4 +1,6 @@
-export PATH=$PATH:/home/rinri/scripts:/home/rinri/scripts/Discord:/home/rinri/.local/bin
+#!/bin/sh
+
+export PATH="$PATH:/home/rinri/scripts:/home/rinri/.local/bin"
 while true; do
     # Log stderror to a file 
     dwm 2> ~/.dwm.log

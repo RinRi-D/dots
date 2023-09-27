@@ -17,3 +17,5 @@ flameshot &
 eval "$(gnome-keyring-daemon --start)" &
 export SSH_AUTH_SOCK &
 easyeffects --gapplication-service &
+mount ~/nextcloud &
+sslocal -c vpnconf/ss.conf &
